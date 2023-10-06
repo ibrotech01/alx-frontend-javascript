@@ -1,6 +1,5 @@
 export const weakMap = new WeakMap();
 let callTime = 1;
-
 export function queryAPI(endPoint) {
   weakMap.set(endPoint, callTime);
   callTime += 1;
